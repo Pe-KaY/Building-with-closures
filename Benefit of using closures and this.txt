@@ -1,0 +1,21 @@
+Memory Efficiency:
+closures can be used to create functions with private state that are memory efficient, 
+as they only keep the necessary variables in memory
+
+Reusability and Modularity:
+components created with closures and this are highly reusable and modular. They can be instantiated multiple times with different configurations without
+interfering with each other.
+
+Dynamic Context Binding with this:
+using this allows you to dynamically bind methods to the object instances,
+making the methods flexible and reusable across different contexts.
+
+Avoiding Global Variables:
+by using closures, you avoid polluting the global namespace with variables,
+reducing the risk of naming conflicts and making the code more maintainable
+
+
+Encapsulation and State Management:
+closures allow you to encapsulate the internal state of a component, 
+ensuring that the state is only accessible and modifiable through the component's methods.
+ This promotes better modularity and data hiding.
