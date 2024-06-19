@@ -28,8 +28,6 @@ function createTimer(duration, elementId) {
   let intervalId
   const displayelement = document.getElementById(elementId)
 
-  // first clears all intervals(incase value is changed before countdown elapse)
-  clearInterval(intervalId)
   // the setinterVal function gain closure over the raminingSec variable
   intervalId = setInterval(() => {
     if (remainingSec > 0) {
@@ -48,5 +46,7 @@ secondsInput.addEventListener("change", function () {
   secondsInput.disabled = true
 
   // here this is used to refer to the input element which the eventlistener is attached
+  // the countdowndisplay refers to the id of the elementId that will display the
+  // seconds
   createTimer(this.value, "countdowndisplay")
 })
